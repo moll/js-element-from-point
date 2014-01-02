@@ -1,0 +1,86 @@
+doctype
+html
+	head
+		meta(charset="utf8")
+		meta(name="viewport", content="initial-scale=1")
+		title ElementFromPoint.js
+
+		style.
+			body {
+				background-color: #556270;
+				padding: 30px;
+				font-family: sans-serif;
+				text-align: center;
+			}
+
+			.blot {
+				margin: 0 auto;
+				border-radius: 30px;
+				width: 60px;
+				height: 60px;
+
+				background-color: #ff6b6b;
+				cursor: pointer;
+
+				color: white;
+				line-height: 60px;
+				font-weight: bold;
+				font-size: 22px;
+			}
+			.blot + .blot { margin-top: 50px; }
+
+			#blot-1 { margin-left: 0; }
+			#blot-2 { margin-left: 25%; }
+			#blot-5 { margin-right: 25%; }
+			#blot-6 { margin-right: 0; }
+
+			#answer {
+				width: 200px;
+				height: 200px;
+				margin: 50px auto;
+				background-color: #c7f464;
+				border-radius: 100px;
+
+				color: #556270;
+				line-height: 200px;
+				font-weight: bold;
+				font-size: 30px;
+			}
+
+			#end {
+				text-align: center;
+				padding-top: 2000px;
+				font-weight: bold;
+				font-size: 20px;
+			}
+
+		script(src="element-from-point.js")
+	
+	body(ontouchend="")
+		#blot-1.blot α
+		#blot-2.blot β
+		#blot-3.blot γ
+
+		#answer
+
+		#blot-4.blot δ
+		#blot-5.blot ε
+		#blot-6.blot ζ
+
+		script.
+			function detect(ev) {
+				var answer = document.getElementById("answer")
+				if (ev.changedTouches) ev = ev.changedTouches[0]
+
+				// iOS 4.3.3 has clientX/Y equal to pageX/Y, so calculate viewport
+				// coordinates:
+				var x = ev.pageX - window.pageXOffset
+				var y = ev.pageY - window.pageYOffset
+				var el = elementFromPoint(x, y)
+
+				if (!el) return answer.textContent = "null"
+				answer.textContent = el.id ? "#" + el.id : el.tagName
+			}
+
+			var ev = "ontouchend" in document ? "touchend" : "mousedown"
+			document.addEventListener(ev, detect, false)

@@ -1,0 +1,33 @@
+{
+	"name": "element-from-point",
+	"version": "0.0.0",
+	"description": "A consistent cross-browser document.elementFromPoint function. Works around idiosyncracies of old WebKits et al.",
+	"keywords": ["browser", "dom"],
+	"homepage": "https://github.com/moll/js-element-from-point",
+	"bugs": "https://github.com/moll/js-element-from-point/issues",
+
+	"author": {
+		"name": "Andri Möll",
+		"email": "andri@dot.ee",
+		"url": "http://themoll.com"
+	},
+
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/moll/js-element-from-point.git"
+	},
+
+	"licenses": [{
+		"type": "LAGPL",
+		"url": "https://github.com/moll/js-element-from-point/blob/master/LICENSE"
+	}],
+
+	"main": "index.js",
+	"scripts": {"test": "make test"},
+
+	"devDependencies": {
+		"browserify": ">= 3.17.0 < 4",
+		"watchify": ">= 0.5.0 < 2",
+		"jade": ">= 1.0.0 < 2"
+	}
+}
