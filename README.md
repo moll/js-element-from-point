@@ -14,7 +14,7 @@ coordinates.
 
 ### Further reading
 - [document.elementFromPoint at MDN][mdn]
-- [QuirksMode's W3C DOM Compability][w3c]
+- [QuirksMode's W3C DOM Compatibility][w3c]
 - [QuirksMode's Great WebKit Comparison Table][comparison]
 
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/API/document.elementFromPoint
