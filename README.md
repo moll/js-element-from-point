@@ -2,14 +2,9 @@ ElementFromPoint.js
 ===================
 [![NPM version][npm-badge]](http://badge.fury.io/js/element-from-point)
 
-ElementFromPoint.js is a cross-browser [`document.elementFromPoint`][mdn]
-function that works consistently across browsers that may implement
-`document.elementFromPoint` differently.
+ElementFromPoint.js is a cross-browser [`document.elementFromPoint`][mdn] function that works consistently across browsers that may implement `document.elementFromPoint` differently.
 
-For example, older iOS or Android devices (with WebKit) implement
-`elementFromPoint` such that it takes page (`pageX/Y`) coordinates, not viewport
-(`clientX/Y`) coordinates. Use this function to always work with viewport
-coordinates.
+For example, older iOS or Android devices (with WebKit) implement `elementFromPoint` such that it takes page (`pageX/Y`) coordinates, not viewport (`clientX/Y`) coordinates. Use this function to always work with viewport coordinates.
 
 ### Further reading
 - [document.elementFromPoint at MDN][mdn]
@@ -44,14 +39,12 @@ document.addEventListener("mousedown", function(ev) {
 
 License
 -------
-ElementFromPoint.js is released under a *Lesser GNU Affero General Public
-License*, which in summary means:
+ElementFromPoint.js is released under a *Lesser GNU Affero General Public License*, which in summary means:
 
 - You **can** use this program for **no cost**.
 - You **can** use this program for **both personal and commercial reasons**.
 - You **do not have to share your own program's code** which uses this program.
-- You **have to share modifications** (e.g bug-fixes) you've made to this
-  program.
+- You **have to share modifications** (e.g bug-fixes) you've made to this program.
 
 For more convoluted language, see the `LICENSE` file.
 
@@ -61,8 +54,7 @@ About
 **[Andri Möll](http://themoll.com)** typed this and the code.  
 [Monday Calendar](https://mondayapp.com) supported the engineering work.
 
-If you find ElementFromPoint.js needs improving, ping me at
-[andri@dot.ee][email] or [create an issue online][issues].
+If you find ElementFromPoint.js needs improving, ping me at [andri@dot.ee][email] or [create an issue online][issues].
 
 [email]: mailto:andri@dot.ee
 [issues]: https://github.com/moll/js-element-from-point/issues
