@@ -1,5 +1,4 @@
 DEBUG =
-
 BROWSERIFY = ./node_modules/.bin/browserify
 WATCHIFY = ./node_modules/.bin/watchify -v
 JADEIFY = ./node_modules/.bin/jade
