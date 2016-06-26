@@ -9,8 +9,8 @@ function isRelativeToViewport() {
 
   var x = window.pageXOffset ? window.pageXOffset + window.innerWidth - 1 : 0
   var y = window.pageYOffset ? window.pageYOffset + window.innerHeight - 1 : 0
-  if (!x && !y) return true
-  
+  if (x === 0 && y === 0) return true
+
   // Test with a point larger than the viewport. If it returns an element,
   // then that means elementFromPoint takes page coordinates.
   return relativeToViewport = !document.elementFromPoint(x, y)
