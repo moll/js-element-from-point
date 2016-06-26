@@ -32,10 +32,12 @@ Just make sure to pass in viewport coordinates and you're all set.
 
 ```javascript
 var elementFromPoint = require("element-from-point")
+
 document.addEventListener("mousedown", function(ev) {
   var el = elementFromPoint(ev.clientX, ev.clientY)
 })
 ```
+
 
 License
 -------
