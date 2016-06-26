@@ -1,7 +1,6 @@
 ElementFromPoint.js
 ===================
 [![NPM version][npm-badge]](http://badge.fury.io/js/element-from-point)
-[npm-badge]: https://badge.fury.io/js/element-from-point.png
 
 ElementFromPoint.js is a cross-browser [`document.elementFromPoint`][mdn]
 function that works consistently across browsers that may implement
@@ -20,12 +19,13 @@ coordinates.
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/API/document.elementFromPoint
 [w3c]: http://www.quirksmode.org/dom/w3c_cssom.html#t20
 [comparison]: http://www.quirksmode.org/webkit.html#t08
+[npm-badge]: https://badge.fury.io/js/element-from-point.png
 
 
 Installing
 ----------
 ### Installing on Node.js
-```
+```sh
 npm install element-from-point
 ```
 
@@ -34,6 +34,7 @@ Using
 -----
 Require and use it as you would use `document.elementFromPoint`.  
 Just make sure to pass in viewport coordinates and you're all set.
+
 ```javascript
 var elementFromPoint = require("element-from-point")
 document.addEventListener("mousedown", function(ev) {
