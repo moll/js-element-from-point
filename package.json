@@ -1,6 +1,6 @@
 {
 	"name": "element-from-point",
-	"version": "0.1.337",
+	"version": "1.0.0",
 	"description": "A consistent cross-browser document.elementFromPoint function. Works around idiosyncracies of old WebKits et al.",
 	"keywords": ["browser", "dom"],
 	"homepage": "https://github.com/moll/js-element-from-point",
